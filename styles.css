@@ -49,15 +49,23 @@ body {
   
   .gallery {
     display: flex;
-    gap: 10px;
+    width: 500px;
+    height: 300px; 
     justify-content: center;
   }
   
   .gallery img {
-    border: 2px solid #333;
-    border-radius: 5px;
+    width: 0px;
+    felx-grow: 1;
+    object-fit: cover;
+      filter: brightness (80%);
+      transition: .7s ease;
   }
-  
+   .gallery img:hover{
+       width: 500px;
+       opacity: 1;
+       filter: brightness (130%);
+   }
   footer {
     text-align: center;
     padding: 10px 0;
